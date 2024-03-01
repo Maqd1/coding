@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+
+.grid1,.grid2,.grid3 {
+    display: grid;
+    grid-template-columns: 180px auto auto;
+}
+
+body {
+    margin: auto;
+    width: 30%;
+    border: 3px solid antiquewhite;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+} 
+
+input[type="submit"] {
+    background-color: #1d1aea;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease-out;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #1cd669; 
+    transform: translateY(-3px); 
+}
+
+.grid1,.grid2,.grid3 >label {
+    font-size:x-small;
+}
+
+#House_Address, #Street_Address{
+    width: 80%;
+    border-radius: 5px;
+}

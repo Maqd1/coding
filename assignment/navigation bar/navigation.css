@@ -1,0 +1,102 @@
+nav>div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 30px; */
+    border: 2px solid transparent; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px; 
+}
+
+nav>div:nth-child(3) {
+    display: flex;
+    gap: 10px;
+}
+
+nav>div:nth-child(2)>div:last-child {
+    display:flex;
+    gap: 5px;
+    align-items: center;
+}
+
+nav>div:nth-child(2) {
+    gap: 20px;
+}
+
+nav>div:nth-child(1) {
+    gap: 5px;
+    display: flex;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+}
+
+nav>div:nth-child(2)>div:nth-child(1):hover {
+    color: #ff712c;
+    cursor: pointer;
+}
+
+nav>div:nth-child(2)>div:nth-child(2):hover {
+    color: #ff712c;
+    cursor: pointer;
+}
+
+nav>div:nth-child(2)>div:nth-child(3):hover {
+    color: #ff712c;
+    cursor: pointer;
+}
+
+nav>div:nth-child(2)>div:nth-child(4):hover {
+    color: #ff712c;
+    cursor: pointer;
+}
+
+nav>div:nth-child(2)>div:nth-child(5):hover {
+    color: #ff712c;
+    cursor: pointer;
+}
+
+nav>div:nth-child(2)>div:nth-child(6):hover {
+    color: #ff712c;
+    cursor: pointer;
+}
+
+nav>div:nth-child(2)>div:nth-child(7):hover {
+    color: #ff712c;
+    cursor: pointer;
+}
+
+nav>div:nth-child(2)>div:last-child div:hover {
+    background-color: #ff712c;
+    filter: brightness(1.5);
+}
+
+button:hover {
+    background-color: #ff712c;
+    border: 0;
+    /* transform: translateX(5px); */
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color : white;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+nav>div:first-child>div:last-child {
+    font-weight: bold;
+}

@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    margin: 0;
+    background-color: #0D1623;
+    width: 100vw;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    padding-top: 120px;
+}
+
+#logo {
+    width: 70px;
+    margin: 28px;
+    margin-left: 50px;
+}
+
+#message {
+    width: 42px;
+    height: 35px;
+}
+
+#search {
+    width: 40px;
+}
+
+#play_down {
+    width: 20px;
+    transform:rotate(90deg);
+    position: relative;
+    top: 3px;
+}
+
+#arrow_topright {
+    width: 50px;
+    position: relative;
+    top: 2px;
+    right: 8px;
+}
+
+#messch,#texcom,#texrow {
+    display:flex;
+    align-items: center;
+}
+
+#messch{
+    gap: 20px;
+}
+
+#clickables {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 40px;
+    margin-right: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E2F46;
+    z-index: 1000; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+nav>div:last-child>div:last-child {
+    font-size: 16px;
+}
+
+#bacG {
+    position: relative;
+    left:10%;
+    top: 30%;
+}
+
+section, nav, #bacG {
+    margin: 0px;
+    padding: 0px;
+}
+
+#top {
+    margin: 0;
+    background-image: url(https://www.ge.com/sites/default/files/2024-02/ge_arweb-banner_1920x850v2-rv.webp);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button {
+    height: 52px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background-color: #0870D8;
+    border-radius: 30px;
+    color: white;
+    padding: 0 28px 0 28px;
+    position: relative;
+    top: 50px ;
+
+}
+
+h1 {
+    font-size: 85px;
+    letter-spacing: 2.5px;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 200px;
+    font-size:51px;
+    padding-left: 10%;
+}
+
+#gridcont {
+    padding-left: 10%;
+    display: grid;
+    grid-template-areas:
+        'card card card card card card card card card card';
+    gap: 80px;
+}
+
+#g1,#g2,#g3,#g4,#g5,#g6,#g7,#g8,#g9,#g10 {
+    display: grid;
+    grid-template-areas:
+        'card'
+        'paragraph'
+        'foot';
+    height: 520px;
+    width: 470px;
+    background-color: #1E2F46;
+    animation: moveRightToLeft 5s ease-out;
+}
+
+#g1>span:nth-child(2),#g3>span:nth-child(2),#g4>span:nth-child(2),
+#g5>span:nth-child(2),#g6>span:nth-child(2),#g7>span:nth-child(2),
+#g8>span:nth-child(2),#g9>span:nth-child(2),#g10>span:nth-child(2) {
+    padding-left: 30px;
+    font-size: 25px;
+    width: 75%;
+    padding-top: 50px;
+    padding-right: 30px;
+    background-color: #1E2F46;
+    position: relative;
+    bottom: 70px;
+}
+
+#g1>span:nth-child(3),#g3>span:nth-child(3),#g4>span:nth-child(3),
+#g5>span:nth-child(3),#g6>span:nth-child(3),#g7>span:nth-child(3),
+#g8>span:nth-child(3),#g9>span:nth-child(3),#g10>span:nth-child(3) {
+    padding-left: 30px;
+    position: relative;
+    bottom: 20px;
+    font-weight: bold;
+}
+
+#g2 {
+    background-color: #0870D8;
+    gap: 120px;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+#g2>span:first-child{
+    font-size: 40px;
+}
+
+
+
+#clickables > div:hover {
+    background-color: #0870D8;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#g1:hover, #g2:hover, #g3:hover, #g4:hover, #g5:hover, #g6:hover, #g7:hover, #g8:hover, #g9:hover, #g10:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+a{
+    color: white;
+    position: relative;
+    padding-top: 150px;
+}
+
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    position: absolute;
+    right: 10%;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 100px;
+}
+
+a:hover{
+    color: #0870D8;
+}
+
+section>img {
+    width: 3%;
+    border-radius: 50%;
+    position: fixed;
+    bottom:10%;
+    left: 30px;
+}
+
+@media screen and (max-width: 414px) {
+    body {
+        color: white;
+        margin: 0;
+        width: 100vw;
+        overflow-x: hidden; 
+        overflow-y: scroll;
+        padding-top: 120px;
+        height: 100vh;
+    }
+    
+    nav {
+      display: flex; 
+      flex-direction: column;
+      width: 100vw;
+    }
+
+    #clickables {
+        font-size: 50%;
+        gap: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    #message {
+        width: 15px;
+        height: 15px;
+    }
+    
+    #search {
+        width: 20px;
+    }
+    
+    #texcon {
+        display: flex;
+        gap: 2px
+        ;
+    }
+
+    #play_down {
+        width: 10px;
+        transform:rotate(90deg);
+        position: relative;
+        top: 1px;
+    }
+    
+    #arrow_topright {
+        width: 30px;
+        position: relative;
+        top: 2px;
+        right: 8px;
+    }
+
+    #messch {
+        gap: 5px;
+    }
+
+    nav>div:last-child>div:last-child {
+        font-size: 10px;
+    }
+
+    #bacG>h1 {
+        font-size: 50px;
+        width: 70%;
+        border-color: #0870D8;
+    }
+
+    #bacG {
+        background-color: #0870D8;
+        padding-bottom: 100px;
+        border-radius: 20px;
+        padding-left: 13px;
+    }
+
+    #top {
+        height: 500px;
+    }
+
+    button {
+        background-color: aliceblue;
+        color: #0870D8;
+        width: 250px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #g1,#g2,#g3,#g4,#g5,#g6,#g7,#g8,#g9,#g10 {
+        display: grid;
+        grid-template-areas:
+            'card'
+            'paragraph'
+            'foot';
+        height: 70%;
+        width: 70%;
+        background-color: #1E2F46;
+        animation: moveRightToLeft 5s ease-out;
+    }
+    
+    #g1>span:nth-child(2),#g3>span:nth-child(2),#g4>span:nth-child(2),
+    #g5>span:nth-child(2),#g6>span:nth-child(2),#g7>span:nth-child(2),
+    #g8>span:nth-child(2),#g9>span:nth-child(2),#g10>span:nth-child(2) {
+        padding-left: 30px;
+        font-size: 70%;
+        width: 50%;
+        padding-top: 50px;
+        padding-right: 30px;
+        background-color: #1E2F46;
+        position: relative;
+        bottom: 70px;
+    }
+    
+    #g1,#g2,#g3,#g4,#g5,#g6,#g7,#g8,#g9,#g10 {
+     width:100% ;
+    }
+    
+
+}

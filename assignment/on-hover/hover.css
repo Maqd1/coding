@@ -1,0 +1,76 @@
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+section {
+    position: absolute;
+    margin: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 25vw;
+}
+
+/* Common styles for all divs */
+div {
+    flex-grow: 1;
+    transition: width 0.3s;
+    width: 20%;
+}
+
+/* Text color styles */
+div:nth-child(1), div:nth-child(2) {
+    color: white;
+}
+
+div:nth-child(3), div:nth-child(4), div:nth-child(5) {
+    color: black;
+}
+
+/* Background color styles */
+div:nth-child(1) {
+    background-color: #606c38;
+}
+
+div:nth-child(2) {
+    background-color: #283618;
+}
+
+div:nth-child(3) {
+    background-color: #fefae0;
+}
+
+div:nth-child(4) {
+    background-color: #dda15e;
+}
+
+div:nth-child(5) {
+    background-color: #bc6c25;
+}
+
+/* text styling */
+p {
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Hover effect */
+div:hover {
+    width: 55%;
+    cursor: pointer;
+}
+
+/* Hover effect for paragraph */
+div:hover p {
+    opacity: 1;
+}
